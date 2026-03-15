@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - My TVET Course Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+<div class="form-box">
+<h2>Send a Message</h2>
+<form id="contactForm">
+    <div class="input-group">
+        <i class="material-icons">person</i>
+        <input type="text" placeholder="Your Name" required>
+    </div>
+
+    <div class="input-group">
+        <i class="material-icons">email</i>
+        <input type="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="input-group">
+        <i class="material-icons">phone</i>
+        <input type="text" placeholder="Phone Number">
+    </div>
+
+    <div class="input-group">
+        <i class="material-icons">message</i>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<p id="success-message">✅ Your message has been sent!</p>
+</div>
+</main>
+
+<footer>
+    &copy; 2026 My TVET Course Notes<br>
+    Developed by: Daznavel Mgaro<br>
+    Email: daznavel@gmail.com | Phone: 0707637091
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('success-message').style.display = 'block';
+    this.reset();
+});
+</script>
+</body>
+</html>
